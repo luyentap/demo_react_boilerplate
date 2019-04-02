@@ -25,7 +25,7 @@ export class Game extends React.PureComponent {
     const { products } = this.props;
     return (
       <div>
-        <TitleGame>
+        <TitleGame className="title">
           <FormattedMessage {...messages.header} />{' '}
         </TitleGame>
         {products.map(item => (
