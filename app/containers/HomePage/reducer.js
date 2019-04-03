@@ -9,8 +9,8 @@
  * case YOUR_ACTION_CONSTANT:
  *   return state.set('yourStateVariable', true);
  */
-import { fromJS } from 'immutable';
 
+import { fromJS } from 'immutable';
 import { CHANGE_USERNAME } from './constants';
 
 // The initial state of the App

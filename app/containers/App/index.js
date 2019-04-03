@@ -14,6 +14,7 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from 'containers/HomePage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
+import Game from 'containers/Game/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 
@@ -32,7 +33,7 @@ export default function App() {
   return (
     <AppWrapper>
       <Helmet
-        titleTemplate="%s - React.js Boilerplate"
+        titleTemplate="%s -demo of  React.js Boilerplate"
         defaultTitle="React.js Boilerplate"
       >
         <meta name="description" content="A React.js Boilerplate application" />
@@ -44,6 +45,7 @@ export default function App() {
         <Route path="" component={NotFoundPage} />
       </Switch>
       <Footer />
+      <Game />
       <GlobalStyle />
     </AppWrapper>
   );

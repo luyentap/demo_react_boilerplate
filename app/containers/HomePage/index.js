@@ -128,8 +128,8 @@ const withConnect = connect(
   mapDispatchToProps,
 );
 
-const withReducer = injectReducer({ key: 'home', reducer });
-const withSaga = injectSaga({ key: 'home', saga });
+const withReducer = injectReducer({ key: 'home_page', reducer });
+const withSaga = injectSaga({ key: 'homec', saga });
 
 export default compose(
   withReducer,
